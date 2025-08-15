@@ -4,10 +4,10 @@ import OdycGame from "./monkey-mayhem";
 
 function App() {
   const [started, setStarted] = useState(false);
-  const [gameResult, setResult] = useState(null);
+  const [gameResult, setGameResult] = useState(null);
 
   const handleGameOver = (won) => {
-    setResult(won ? 'You Win! 🎉' : 'Game Over! Try Again. 💀');
+    setGameResult(won ? 'You Win! 🎉' : 'Game Over! Try Again. 💀');
     setStarted(false);
 
   }
