@@ -13,16 +13,20 @@ export default function OdycGame() {
         map: `
           ########
           #......#
-          #..X...#
+          #..B...#
           #......#
           ########
         `,
         templates: {
-          X: {
-            sprite: 4,
-            dialog: 'Hello from React + Odyc!'
+          B: {
+            sprite: 5,
+            dialog: 'You found a banana! +1 point.',
           }
-        }
+        },
+        music: {
+            src: '', //Add music here
+            loop: true,
+        } 
       });
     }
   }, []);
