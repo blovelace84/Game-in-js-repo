@@ -1,2 +1,0 @@
-# Game-in-js-repo
-
