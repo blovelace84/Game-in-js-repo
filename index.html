@@ -10,20 +10,37 @@
         <h1>Monkey Mayhem!</h1>
 		<script>
 			const game = odyc.createGame({
-              player: {
-                sprite: `
-                    ........
-                    9.......
-                    .9...9..
-                    9....909
-                    99999999
-                    .89999..
-                    ..9.9.9.
-                    99...9.9
-                    `,
-                    position: [3,4],
-                    visibility: true
-              }
+               templates: {
+                x: { sprite: 0 },
+                g: { sprite: 7},
+                r: { sprite: 4 }
+               },
+               map: `
+                xxxxxxxxxxxxxxx
+                x.............x
+                x....g........x
+                x.............x
+                x.......r.....x
+                x.............x
+                x.............x
+                xxxxxxxxxxxxxxx
+                `
+	},
+
+			  player: {
+				sprite: `
+					........
+					9.......
+					.9...9..
+					9....909
+					99999999
+					.89999..
+					..9.9.9.
+					99...9.9
+					`,
+					position: [3,4],
+					visibility: true
+			  
 			})
 		</script>
 	</body>
