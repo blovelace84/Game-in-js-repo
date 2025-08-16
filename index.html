@@ -3,12 +3,24 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Monkey Mayhem</title>
 		<script src="https://www.unpkg.com/odyc@latest/dist/index.global.js"></script>
 	</head>
 	<body>
 		<script>
 			const game = odyc.createGame({
-				title: 'Monkey Mayhem'
+                player: {
+		sprite: `
+      ...44...
+      ...88...
+      ...88...
+      .434434.
+      4.3443.4
+      1.3333.1
+      ..3333..
+      ..3..3..
+    `
+	}
 			})
 		</script>
 	</body>
